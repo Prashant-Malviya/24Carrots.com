@@ -1,16 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
+import Body from './Components/Body'
+import VideoWrapper from './Components/VideoWrapper'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <duv>
+    <div>
           <Navbar />
-    </duv>
+          {/* <VideoWrapper /> */}
+          <Body />
+    </div>
   )
 }
 

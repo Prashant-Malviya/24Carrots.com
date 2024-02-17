@@ -13,7 +13,7 @@ const VideoWrapper = () => {
         <source src={video} type="video/mp4" />
       </video>
       <div className="text-overlay absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-        <p className="text-4xl font-bold">Simply The Finest</p>
+        <p className="text-4xl md:text-5xl lg:text-6xl font-bold">Simply The Finest</p>
       </div>
     </div>
   );

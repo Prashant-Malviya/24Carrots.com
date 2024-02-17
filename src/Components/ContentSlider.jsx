@@ -5,10 +5,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import img1 from '../assets/images/1.1-Lorely-Meza-1.jpg';
 import img2 from '../assets/images/1.2-Holly-Sigafoos-Photo.jpg';
 import img3 from '../assets/images/1.3-Holly-Sigafoos-Photo.jpg';
+import bgImg from '../assets/images/bgImg.jpg'; 
 
 const ContentSlider = () => {
   const settings = {
-    dots: true, // Enable dots
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -17,7 +18,14 @@ const ContentSlider = () => {
   };
 
   return (
-    <div className="flex flex-row md:flex-row items-center relative py-10 md:py-16">
+    <div
+      className="flex flex-row md:flex-row items-center relative py-10 md:py-16"
+      style={{
+        backgroundImage: `url(${bgImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="w-full md:w-1/2 p-8 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">WELCOME TO 24 CARROTS</h2>
         <h2 className="text-5xl md:text-8xl font-bold mb-4">Remarkable Catering & Events</h2>
@@ -31,11 +39,7 @@ const ContentSlider = () => {
       <div className="w-full md:w-1/2 relative overflow-hidden">
         <Slider {...settings} className="rounded-l-lg">
           <div className="w-full h-full overflow-hidden">
-            <img
-              src={img1}
-              alt="Image 1"
-              className="w-full h-full rounded-tl-full"
-            />
+            <img src={img1} alt="Image 1" className="w-full h-full rounded-tl-full" />
           </div>
           <div className="w-full h-full overflow-hidden">
             <img src={img2} alt="Image 2" className="w-full h-full rounded-tl-full" />

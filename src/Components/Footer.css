@@ -1,0 +1,144 @@
+/* Footer Styles */
+.site-footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #555;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .flex_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex_two {
+    justify-content: space-between;
+  }
+  
+  .flex_item {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .one_third {
+    flex: 0 0 calc(33.3333% - 20px);
+  }
+  
+  .two_thirds {
+    flex: 0 0 calc(66.6667% - 20px);
+  }
+  
+  .footer-logo {
+    width: 150px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background: url('path/to/your-logo.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .footer-content {
+    margin-top: 20px;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-menu a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-menu a:hover {
+    color: #007bff;
+  }
+  
+  .footer-info {
+    text-align: center;
+  }
+  
+  .footer-info-block {
+    margin-bottom: 15px;
+  }
+  
+  .footer-info-block p {
+    margin: 0;
+  }
+  
+  .website-by {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+  }
+  
+  .dc-logo {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    background: url('path/to/dooley-creative-logo.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .footer-break {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+  }
+  
+  .legal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .legal-menu a {
+    text-decoration: none;
+    color: #555;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .legal-menu a:hover {
+    color: #007bff;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  

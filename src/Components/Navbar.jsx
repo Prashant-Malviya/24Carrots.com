@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav className="fixed top-0 w-full min-h-[131px] flex justify-center items-center z-50 bg-white transition-all duration-300 ease-in-out">
+    <nav className="top-0 w-full min-h-[131px] flex justify-center items-center z-50 bg-white transition-all duration-300 ease-in-out">
       <div className="container mx-auto p-4 md:p-8">
         <div className="text-[#1A4122FF] box-sizing[inherit] text-base leading-6 block">
           <ul className="flex justify-center space-x-4 md:space-x-8">
@@ -36,10 +36,10 @@ function Navbar() {
                 <p className="text-xs">CATERING & EVENTS</p>
               </a>
             </li>
-            <li className="nav-item clickable">VENUES</li>
-            <li className="nav-item clickable">CAREERS</li>
+            <li className="nav-item clickable"><a href="#">VENUES</a> </li>
+            <li className="nav-item clickable"><a href="#">CAREERS</a> </li>
             <li className="nav-item">
-              <button className="btn bg-[#1A4122FF] text-white px-4 py-2 rounded-md">GET IN TOUCH</button>
+              <button className="btn bg-[#f85230] text-white px-4 py-2 rounded-md">GET IN TOUCH</button>
             </li>
           </ul>
         </div>
